@@ -12,8 +12,6 @@ micronaut:
         pool:
           enabled: true
           max-connections: 100
-        proxy-type: HTTP
-        proxy-address: proxy2.isis.airnz.co.nz:3128
 netty:
   default:
     allocator:
