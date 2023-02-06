@@ -1,6 +1,19 @@
 micronaut:
   application:
     name: httpclient
+  http:
+    services:
+      httpstatus:
+        urls:
+          - https://httpstat.us
+        connect-timeout: 10s
+        num-of-threads: 8
+        read-timeout: 1500ms
+        pool:
+          enabled: true
+          max-connections: 100
+        proxy-type: HTTP
+        proxy-address: proxy2.isis.airnz.co.nz:3128
 netty:
   default:
     allocator:
