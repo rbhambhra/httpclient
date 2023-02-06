@@ -1,0 +1,7 @@
+micronaut:
+  application:
+    name: httpclient
+netty:
+  default:
+    allocator:
+      max-order: 3
